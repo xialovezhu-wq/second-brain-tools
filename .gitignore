@@ -50,3 +50,13 @@ config.local.json
 /outbox/
 /publication/
 .playwright-cli/
+
+# Local provider credentials must never be committed.
+*.secret
+**/auth.json
+**/credentials.json
+**/api-key
+**/api_key
+**/caller-secret
+**/internal-secret
+**/cursor-public-secret
